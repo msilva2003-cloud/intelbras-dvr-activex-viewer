@@ -1,5 +1,11 @@
 # DVR Intelbras — Acesso Web com ActiveX no Windows 10/11 (sem Internet Explorer)
 
+[![Downloads](https://img.shields.io/github/downloads/msilva2003-cloud/intelbras-dvr-activex-viewer/total?label=downloads&color=00843d)](../../releases/latest)
+[![Versão](https://img.shields.io/github/v/release/msilva2003-cloud/intelbras-dvr-activex-viewer?label=vers%C3%A3o)](../../releases/latest)
+[![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
+
+🌐 Página do projeto: https://msilva2003-cloud.github.io/intelbras-dvr-activex-viewer/
+
 **Ferramenta gratuita para abrir a interface web ("Acesso Web") de DVRs Intelbras antigos que exigem o plugin ActiveX `webrec`, agora que o Internet Explorer foi removido do Windows.**
 
 Se você digita o IP do seu DVR Intelbras no navegador, faz login e **nada acontece**, se **as câmeras não aparecem**, se o site pede um **plugin que não instala**, ou se o console mostra `ocx.SetParams is not a function`, este projeto é para você.
