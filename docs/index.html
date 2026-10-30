@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DVR Intelbras não abre no navegador? Acesso Web com ActiveX no Windows 11 (grátis)</title>
+<meta name="description" content="Programa gratuito para acessar DVR Intelbras antigo pelo Acesso Web no Windows 10 e 11 sem Internet Explorer. Resolve câmeras que não aparecem, plugin webrec.cab que não instala e erro ocx.SetParams is not a function.">
+<meta name="keywords" content="DVR Intelbras, Acesso Web Intelbras, plugin ActiveX, webrec.cab, webrec.ocx, Internet Explorer, Windows 11, câmeras não aparecem, CFTV, Dahua, modo IE Edge">
+<link rel="canonical" href="https://msilva2003-cloud.github.io/intelbras-dvr-activex-viewer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DVR Intelbras: Acesso Web com ActiveX no Windows 10/11 — grátis">
+<meta property="og:description" content="Abra a interface web de DVRs Intelbras antigos sem Internet Explorer. Download gratuito e código aberto.">
+<meta property="og:url" content="https://msilva2003-cloud.github.io/intelbras-dvr-activex-viewer/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "DvrViewer — Acesso Web DVR Intelbras com ActiveX",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "description": "Navegador com motor do Internet Explorer 10 que permite usar o plugin ActiveX webrec dos DVRs Intelbras antigos no Windows 10 e 11.",
+  "downloadUrl": "https://github.com/msilva2003-cloud/intelbras-dvr-activex-viewer/releases/latest",
+  "license": "https://opensource.org/licenses/MIT"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Por que o DVR Intelbras não abre no Chrome ou no Edge?",
+     "acceptedAnswer": {"@type": "Answer", "text": "DVRs Intelbras antigos mostram o vídeo pela página web com um plugin ActiveX (webrec.ocx). Chrome, Firefox e Edge não executam ActiveX, e o Internet Explorer foi removido do Windows."}},
+    {"@type": "Question", "name": "Por que o modo Internet Explorer do Edge não resolve?",
+     "acceptedAnswer": {"@type": "Answer", "text": "O modo IE do Edge se identifica como IE11. A página do DVR só ativa o plugin quando o navegador se identifica como MSIE (IE10 ou anterior), então o login trava com o erro ocx.SetParams is not a function."}},
+    {"@type": "Question", "name": "Por que o plugin webrec.cab não instala?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Os arquivos do plugin não têm assinatura digital, e o Internet Explorer se recusa a instalar controles ActiveX sem assinatura. O instalar-plugin.bat deste projeto registra o plugin manualmente."}},
+    {"@type": "Question", "name": "É gratuito?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Sim. É código aberto, licença MIT, sem custo."}}
+  ]
+}
+</script>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2329; --muted:#5b6670; --accent:#00843d; --card:#f3f6f4; --border:#dfe5e1; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181b; --fg:#e7ecea; --muted:#9aa6a0; --accent:#3fbf74; --card:#1d2327; --border:#2c3438; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:820px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 12px; }
+  h2 { font-size:1.25rem; margin:36px 0 8px; }
+  .lead { color:var(--muted); font-size:1.08rem; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:12px 22px; border-radius:8px; font-weight:600; margin:16px 12px 0 0; }
+  .btn.sec { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px 20px; margin:16px 0; }
+  code { background:var(--card); border:1px solid var(--border); border-radius:4px; padding:1px 5px; font-size:.92em; word-break:break-word; }
+  ol li { margin:6px 0; }
+  .nota { color:var(--muted); font-size:.9rem; margin-top:40px; border-top:1px solid var(--border); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DVR Intelbras não abre no navegador? Acesse pelo Acesso Web no Windows 10 e 11</h1>
+  <p class="lead">Programa <strong>gratuito e de código aberto</strong> que permite usar o plugin ActiveX <code>webrec</code> dos DVRs Intelbras antigos, agora que o Internet Explorer não existe mais no Windows.</p>
+  <a class="btn" href="https://github.com/msilva2003-cloud/intelbras-dvr-activex-viewer/releases/latest">Baixar grátis</a>
+  <a class="btn sec" href="https://github.com/msilva2003-cloud/intelbras-dvr-activex-viewer">Ver no GitHub</a>
+
+  <h2>Este programa resolve se…</h2>
+  <ul>
+    <li>você digita o IP do DVR, faz login e <strong>nada acontece</strong>;</li>
+    <li>as <strong>câmeras não aparecem</strong> na página do DVR;</li>
+    <li>a página pede um <strong>plugin que não instala</strong> (<code>webrec.cab</code>);</li>
+    <li>o modo Internet Explorer do Edge também não funciona;</li>
+    <li>aparece o erro <code>ocx.SetParams is not a function</code>.</li>
+  </ul>
+
+  <h2>Como usar</h2>
+  <div class="card">
+    <ol>
+      <li>Baixe o <code>.zip</code> e extraia numa pasta.</li>
+      <li>Clique com o botão direito em <code>instalar-plugin.bat</code> → <strong>Executar como administrador</strong> e informe o IP do DVR (ex.: <code>192.168.1.108</code>).</li>
+      <li>Abra o <code>DvrViewer.exe</code>, digite o endereço do DVR e clique em <strong>Ir</strong>.</li>
+      <li>Faça login. As câmeras aparecem.</li>
+    </ol>
+  </div>
+
+  <h2>Por que os navegadores atuais não funcionam</h2>
+  <p>Os DVRs Intelbras mais antigos exibem o vídeo com o controle ActiveX <code>webrec.ocx</code>, que o próprio aparelho fornece no arquivo <code>webrec.cab</code>. Chrome, Firefox e Edge não executam ActiveX. O modo IE do Edge se apresenta como IE11, mas a página do DVR só ativa o plugin para “MSIE” (IE10 ou anterior). Além disso, o plugin não é assinado digitalmente, então nem o IE o instala sozinho.</p>
+  <p>O <strong>DvrViewer</strong> é um navegador mínimo com o motor do Internet Explorer em modo IE10, que libera o ActiveX <strong>somente para o endereço do DVR</strong>. O instalador baixa o plugin <strong>do seu próprio DVR</strong> e o registra no Windows. Nenhum arquivo da Intelbras é redistribuído.</p>
+
+  <h2>Segurança</h2>
+  <p>Use o DvrViewer apenas para acessar o DVR na sua rede local. O motor do Internet Explorer é antigo e não deve ser usado para navegar na internet.</p>
+
+  <p class="nota">Projeto independente e não oficial, sem vínculo com a Intelbras ou a Dahua. As marcas citadas pertencem aos seus donos e aparecem só para identificar os equipamentos compatíveis. Licença MIT.</p>
+</main>
+</body>
+</html>

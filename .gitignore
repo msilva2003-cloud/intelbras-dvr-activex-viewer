@@ -1,0 +1,12 @@
+# Plugin proprietário da Intelbras: vem do próprio DVR, não é redistribuído
+plugin/
+
+# Binários e pacotes (publicados em Releases)
+*.exe
+*.zip
+dist/
+
+DvrViewer-erro.txt
+
+# Instruções locais do autor
+LEIA-ME.txt
